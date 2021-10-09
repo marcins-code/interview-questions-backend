@@ -9,6 +9,6 @@ MongoClient.connect(uri, connectionOptions)
   })
   .then(async (client) => {
     app.listen(port, () => {
-      console.log(`listening on port ${port}`);
+      console.log(`Connected to Mongo on port ${port}`);
     });
   });
